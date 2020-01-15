@@ -1,5 +1,4 @@
 <?php
-
 Route::group(['middleware' => config('saml2_settings.routesMiddleware')], function() {
     Route::group(['prefix' => '{idpName}'], function(){
         $saml2_controller = config('saml2_settings.saml2_controller', 'Aacotroneo\Saml2\Http\Controllers\Saml2Controller');
